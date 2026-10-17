@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Discover your style at SHOP.CO. Explore new arrivals, trending clothing, and outfits for every occasion."
+    />
+
+    <title>SHOP.CO — Find Clothes That Match Your Style</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ==================================================
+         SITE HEADER
+    =================================================== -->
+    <header class="site-header">
+      <!-- Announcement Bar -->
+      <div class="announcement-bar">
+        <p class="announcement-bar__message">
+          Sign up and get 20% off your first order.
+          <a class="announcement-bar__link" href="/signup"> Sign Up Now </a>
+        </p>
+
+        <button
+          class="announcement-bar__dismiss"
+          type="button"
+          aria-label="Dismiss announcement"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Main Navigation -->
+      <div class="site-header__main">
+        <a class="site-logo" href="/" aria-label="SHOP.CO home"> SHOP.CO </a>
+
+        <nav
+          class="primary-navigation"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <ul class="primary-navigation__list">
+            <li class="primary-navigation__item">
+              <a class="primary-navigation__link" href="/shop">
+                Shop
+                <span aria-hidden="true">&#9662;</span>
+              </a>
+            </li>
+
+            <li class="primary-navigation__item">
+              <a class="primary-navigation__link" href="/collections/on-sale">
+                On Sale
+              </a>
+            </li>
+
+            <li class="primary-navigation__item">
+              <a
+                class="primary-navigation__link"
+                href="/collections/new-arrivals"
+              >
+                New Arrivals
+              </a>
+            </li>
+
+            <li class="primary-navigation__item">
+              <a class="primary-navigation__link" href="/brands"> Brands </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Product Search -->
+        <form class="search-form" action="/search" method="get" role="search">
+          <label class="visually-hidden" for="site-search">
+            Search products
+          </label>
+
+          <button
+            class="search-form__button"
+            type="submit"
+            aria-label="Submit search"
+          >
+            <span aria-hidden="true">&#9906;</span>
+          </button>
+
+          <input
+            class="search-form__input"
+            id="site-search"
+            type="search"
+            name="q"
+            placeholder="Search for products..."
+          />
+        </form>
+
+        <!-- Account and Shopping Actions -->
+        <div class="header-actions">
+          <a
+            class="header-actions__link"
+            href="/cart"
+            aria-label="Shopping cart"
+          >
+            <span aria-hidden="true">&#128722;</span>
+          </a>
+
+          <a
+            class="header-actions__link"
+            href="/account"
+            aria-label="Your account"
+          >
+            <span aria-hidden="true">&#9786;</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+    <main class="site-main">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Find Clothes That Matches Your Style
+          </h1>
+
+          <p class="hero__description">
+            Browse through our diverse range of meticulously crafted garments,
+            designed to bring out your individuality and cater to your sense of
+            style.
+          </p>
+
+          <a class="button button--primary hero__button" href="/shop">
+            Shop Now
+          </a>
+
+          <!-- Store Statistics -->
+          <ul class="store-statistics" aria-label="Store statistics">
+            <li class="store-statistics__item">
+              <strong class="store-statistics__value"> 200+ </strong>
+
+              <span class="store-statistics__label">
+                International Brands
+              </span>
+            </li>
+
+            <li class="store-statistics__item">
+              <strong class="store-statistics__value"> 2,000+ </strong>
+
+              <span class="store-statistics__label">
+                High-Quality Products
+              </span>
+            </li>
+
+            <li class="store-statistics__item">
+              <strong class="store-statistics__value"> 30,000+ </strong>
+
+              <span class="store-statistics__label"> Happy Customers </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <img
+            class="hero__image"
+            src="assets/images/hero-models.jpg"
+            alt="Two fashion models wearing contemporary outfits"
+            width="720"
+            height="640"
+            fetchpriority="high"
+          />
+
+          <span
+            class="hero__decoration hero__decoration--large"
+            aria-hidden="true"
+          >
+            ✦
+          </span>
+
+          <span
+            class="hero__decoration hero__decoration--small"
+            aria-hidden="true"
+          >
+            ✦
+          </span>
+        </div>
+      </section>
+
+      <!-- Featured Brand Strip -->
+      <section class="brand-strip" aria-label="Featured brands">
+        <ul class="brand-strip__list">
+          <li class="brand-strip__item brand-strip__item--versace">VERSACE</li>
+
+          <li class="brand-strip__item brand-strip__item--zara">ZARA</li>
+
+          <li class="brand-strip__item brand-strip__item--gucci">GUCCI</li>
+
+          <li class="brand-strip__item brand-strip__item--prada">PRADA</li>
+
+          <li class="brand-strip__item brand-strip__item--calvin-klein">
+            Calvin Klein
+          </li>
+        </ul>
+      </section>
+
+      <!-- ==================================================
+             NEW ARRIVALS
+        =================================================== -->
+      <section
+        class="product-section"
+        id="new-arrivals"
+        aria-labelledby="new-arrivals-title"
+      >
+        <div class="container">
+          <h2 class="section-title" id="new-arrivals-title">New Arrivals</h2>
+
+          <ul class="product-grid">
+            <!-- Product 1 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/t-shirt-with-tape-details"
+                  aria-label="View T-shirt with Tape Details"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/t-shirt-tape-details.jpg"
+                    alt="Black T-shirt with tape details"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/t-shirt-with-tape-details">
+                      T-shirt with Tape Details
+                    </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★★
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 4.5 out of 5"
+                    >
+                      4.5/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $120 </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <!-- Product 2 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/skinny-fit-jeans"
+                  aria-label="View Skinny Fit Jeans"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/skinny-fit-jeans.jpg"
+                    alt="Blue skinny-fit denim jeans"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/skinny-fit-jeans"> Skinny Fit Jeans </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★☆
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 3.5 out of 5"
+                    >
+                      3.5/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $240 </span>
+
+                    <del class="product-card__original-price"> $260 </del>
+
+                    <span class="product-card__discount"> -20% </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <!-- Product 3 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/checkered-shirt"
+                  aria-label="View Checkered Shirt"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/checkered-shirt.jpg"
+                    alt="Long-sleeved red and blue checkered shirt"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/checkered-shirt"> Checkered Shirt </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★★
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 4.5 out of 5"
+                    >
+                      4.5/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $180 </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <!-- Product 4 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/sleeve-striped-t-shirt"
+                  aria-label="View Sleeve Striped T-shirt"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/sleeve-striped-t-shirt.jpg"
+                    alt="Black and orange short-sleeved striped T-shirt"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/sleeve-striped-t-shirt">
+                      Sleeve Striped T-shirt
+                    </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★★
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 4.5 out of 5"
+                    >
+                      4.5/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $130 </span>
+
+                    <del class="product-card__original-price"> $160 </del>
+
+                    <span class="product-card__discount"> -30% </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="product-section__footer">
+            <a
+              class="button button--secondary"
+              href="/collections/new-arrivals"
+            >
+              View All
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+             TOP SELLING
+        =================================================== -->
+      <section
+        class="product-section product-section--top-selling"
+        id="top-selling"
+        aria-labelledby="top-selling-title"
+      >
+        <div class="container">
+          <h2 class="section-title" id="top-selling-title">Top Selling</h2>
+
+          <ul class="product-grid">
+            <!-- Product 1 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/vertical-striped-shirt"
+                  aria-label="View Vertical Striped Shirt"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/vertical-striped-shirt.jpg"
+                    alt="Green long-sleeved shirt with vertical stripes"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/vertical-striped-shirt">
+                      Vertical Striped Shirt
+                    </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★★
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 5 out of 5"
+                    >
+                      5.0/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $212 </span>
+
+                    <del class="product-card__original-price"> $232 </del>
+
+                    <span class="product-card__discount"> -20% </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <!-- Product 2 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/courage-graphic-t-shirt"
+                  aria-label="View Courage Graphic T-shirt"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/courage-graphic-t-shirt.jpg"
+                    alt="Orange graphic T-shirt with a printed design"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/courage-graphic-t-shirt">
+                      Courage Graphic T-shirt
+                    </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★☆
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 4 out of 5"
+                    >
+                      4.0/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $145 </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <!-- Product 3 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/loose-fit-bermuda-shorts"
+                  aria-label="View Loose Fit Bermuda Shorts"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/loose-fit-bermuda-shorts.jpg"
+                    alt="Blue loose-fit denim Bermuda shorts"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/loose-fit-bermuda-shorts">
+                      Loose Fit Bermuda Shorts
+                    </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★☆☆
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 3 out of 5"
+                    >
+                      3.0/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $80 </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+
+            <!-- Product 4 -->
+            <li class="product-grid__item">
+              <article class="product-card">
+                <a
+                  class="product-card__image-link"
+                  href="/products/faded-skinny-jeans"
+                  aria-label="View Faded Skinny Jeans"
+                >
+                  <img
+                    class="product-card__image"
+                    src="assets/images/products/faded-skinny-jeans.jpg"
+                    alt="Black faded skinny-fit denim jeans"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="product-card__details">
+                  <h3 class="product-card__title">
+                    <a href="/products/faded-skinny-jeans">
+                      Faded Skinny Jeans
+                    </a>
+                  </h3>
+
+                  <div class="product-rating">
+                    <span class="product-rating__stars" aria-hidden="true">
+                      ★★★★★
+                    </span>
+
+                    <span
+                      class="product-rating__score"
+                      aria-label="Rating: 4.5 out of 5"
+                    >
+                      4.5/5
+                    </span>
+                  </div>
+
+                  <p class="product-card__price">
+                    <span class="product-card__current-price"> $210 </span>
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="product-section__footer">
+            <a class="button button--secondary" href="/collections/top-selling">
+              View All
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================
+             BROWSE BY DRESS STYLE
+        =================================================== -->
+      <section
+        class="dress-styles"
+        id="dress-styles"
+        aria-labelledby="dress-styles-title"
+      >
+        <div class="container dress-styles__container">
+          <h2 class="section-title" id="dress-styles-title">
+            Browse by Dress Style
+          </h2>
+
+          <ul class="dress-styles__grid">
+            <li class="dress-styles__item">
+              <a
+                class="style-card style-card--casual"
+                href="/collections/casual"
+              >
+                <img
+                  class="style-card__image"
+                  src="assets/images/styles/casual.jpg"
+                  alt="Person wearing a casual everyday outfit"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <span class="style-card__title"> Casual </span>
+              </a>
+            </li>
+
+            <li class="dress-styles__item">
+              <a
+                class="style-card style-card--formal"
+                href="/collections/formal"
+              >
+                <img
+                  class="style-card__image"
+                  src="assets/images/styles/formal.jpg"
+                  alt="Person wearing a formal checked suit"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <span class="style-card__title"> Formal </span>
+              </a>
+            </li>
+
+            <li class="dress-styles__item">
+              <a class="style-card style-card--party" href="/collections/party">
+                <img
+                  class="style-card__image"
+                  src="assets/images/styles/party.jpg"
+                  alt="Person wearing an elegant party outfit"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <span class="style-card__title"> Party </span>
+              </a>
+            </li>
+
+            <li class="dress-styles__item">
+              <a class="style-card style-card--gym" href="/collections/gym">
+                <img
+                  class="style-card__image"
+                  src="assets/images/styles/gym.jpg"
+                  alt="Person wearing athletic gym clothing"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
+
+                <span class="style-card__title"> Gym </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==================================================
+             CUSTOMER TESTIMONIALS
+        =================================================== -->
+      <section
+        class="customer-reviews"
+        id="customer-reviews"
+        aria-labelledby="customer-reviews-title"
+      >
+        <div class="container">
+          <div class="customer-reviews__header">
+            <h2
+              class="section-title customer-reviews__title"
+              id="customer-reviews-title"
+            >
+              Our Happy Customers
+            </h2>
+
+            <div
+              class="carousel-controls"
+              aria-label="Customer reviews controls"
+            >
+              <button
+                class="carousel-controls__button"
+                type="button"
+                aria-label="Previous customer reviews"
+                aria-controls="customer-reviews-list"
+              >
+                <span aria-hidden="true">&larr;</span>
+              </button>
+
+              <button
+                class="carousel-controls__button"
+                type="button"
+                aria-label="Next customer reviews"
+                aria-controls="customer-reviews-list"
+              >
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <ul
+            class="customer-reviews__list"
+            id="customer-reviews-list"
+            aria-label="Customer testimonials"
+          >
+            <li class="customer-reviews__item">
+              <article class="review-card">
+                <div class="review-card__rating">
+                  <span aria-hidden="true"> ★★★★★ </span>
+
+                  <span class="visually-hidden"> 5 out of 5 stars </span>
+                </div>
+
+                <h3 class="review-card__author">
+                  Sarah M.
+                  <span
+                    class="review-card__verified"
+                    aria-label="Verified customer"
+                    title="Verified customer"
+                  >
+                    &#10003;
+                  </span>
+                </h3>
+
+                <blockquote class="review-card__quote">
+                  <p>
+                    I'm blown away by the quality and style of the clothes I
+                    received from SHOP.CO. From casual wear to elegant dresses,
+                    every piece I've bought has exceeded my expectations.
+                  </p>
+                </blockquote>
+              </article>
+            </li>
+
+            <li class="customer-reviews__item">
+              <article class="review-card">
+                <div class="review-card__rating">
+                  <span aria-hidden="true"> ★★★★★ </span>
+
+                  <span class="visually-hidden"> 5 out of 5 stars </span>
+                </div>
+
+                <h3 class="review-card__author">
+                  Alex K.
+                  <span
+                    class="review-card__verified"
+                    aria-label="Verified customer"
+                    title="Verified customer"
+                  >
+                    &#10003;
+                  </span>
+                </h3>
+
+                <blockquote class="review-card__quote">
+                  <p>
+                    Finding clothes that align with my personal style used to be
+                    a challenge until I discovered SHOP.CO. The range of options
+                    and quality are remarkable, catering to a variety of tastes
+                    and occasions.
+                  </p>
+                </blockquote>
+              </article>
+            </li>
+
+            <li class="customer-reviews__item">
+              <article class="review-card">
+                <div class="review-card__rating">
+                  <span aria-hidden="true"> ★★★★★ </span>
+
+                  <span class="visually-hidden"> 5 out of 5 stars </span>
+                </div>
+
+                <h3 class="review-card__author">
+                  James L.
+                  <span
+                    class="review-card__verified"
+                    aria-label="Verified customer"
+                    title="Verified customer"
+                  >
+                    &#10003;
+                  </span>
+                </h3>
+
+                <blockquote class="review-card__quote">
+                  <p>
+                    As someone who's always on the lookout for unique fashion
+                    pieces, I'm thrilled to have stumbled upon SHOP.CO. The
+                    selection of clothes is not only diverse but also on point
+                    with the latest trends.
+                  </p>
+                </blockquote>
+              </article>
+            </li>
+
+            <li class="customer-reviews__item">
+              <article class="review-card">
+                <div class="review-card__rating">
+                  <span aria-hidden="true"> ★★★★★ </span>
+
+                  <span class="visually-hidden"> 5 out of 5 stars </span>
+                </div>
+
+                <h3 class="review-card__author">
+                  Aisha R.
+                  <span
+                    class="review-card__verified"
+                    aria-label="Verified customer"
+                    title="Verified customer"
+                  >
+                    &#10003;
+                  </span>
+                </h3>
+
+                <blockquote class="review-card__quote">
+                  <p>
+                    Shopping here has been such a great experience. The styles
+                    are versatile, the products look fantastic, and it's easy to
+                    find something for different occasions.
+                  </p>
+                </blockquote>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================================================
+         SITE FOOTER
+    =================================================== -->
+    <footer class="site-footer">
+      <!-- Newsletter Subscription -->
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div class="container">
+          <div class="newsletter__content">
+            <h2 class="newsletter__title" id="newsletter-title">
+              Stay Up to Date About Our Latest Offers
+            </h2>
+
+            <form
+              class="newsletter-form"
+              action="/newsletter/subscribe"
+              method="post"
+            >
+              <div class="newsletter-form__field">
+                <label class="visually-hidden" for="newsletter-email">
+                  Enter your email address
+                </label>
+
+                <input
+                  class="newsletter-form__input"
+                  id="newsletter-email"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <button class="button button--newsletter" type="submit">
+                Subscribe to Newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Navigation and Company Information -->
+      <div class="container">
+        <div class="footer-main">
+          <!-- Brand Information -->
+          <div class="footer-brand">
+            <a
+              class="site-logo footer-brand__logo"
+              href="/"
+              aria-label="SHOP.CO home"
+            >
+              SHOP.CO
+            </a>
+
+            <p class="footer-brand__description">
+              We have clothes that suit your style and which you're proud to
+              wear. From women to men.
+            </p>
+
+            <nav class="social-navigation" aria-label="Social media">
+              <ul class="social-navigation__list">
+                <li>
+                  <a
+                    class="social-navigation__link"
+                    href="https://twitter.com/"
+                    aria-label="Twitter"
+                  >
+                    <span aria-hidden="true">X</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="social-navigation__link"
+                    href="https://facebook.com/"
+                    aria-label="Facebook"
+                  >
+                    <span aria-hidden="true">f</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="social-navigation__link"
+                    href="https://instagram.com/"
+                    aria-label="Instagram"
+                  >
+                    <span aria-hidden="true">◎</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="social-navigation__link"
+                    href="https://github.com/"
+                    aria-label="YouTube"
+                  >
+                    <span aria-hidden="true">▶</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Company Links -->
+          <nav class="footer-navigation" aria-labelledby="footer-company-title">
+            <h2 class="footer-navigation__title" id="footer-company-title">
+              Company
+            </h2>
+
+            <ul class="footer-navigation__list">
+              <li>
+                <a href="/about"> About </a>
+              </li>
+
+              <li>
+                <a href="/features"> Features </a>
+              </li>
+
+              <li>
+                <a href="/works"> Works </a>
+              </li>
+
+              <li>
+                <a href="/careers"> Career </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Help Links -->
+          <nav class="footer-navigation" aria-labelledby="footer-help-title">
+            <h2 class="footer-navigation__title" id="footer-help-title">
+              Help
+            </h2>
+
+            <ul class="footer-navigation__list">
+              <li>
+                <a href="/support"> Customer Support </a>
+              </li>
+
+              <li>
+                <a href="/delivery"> Delivery Details </a>
+              </li>
+
+              <li>
+                <a href="/terms"> Terms &amp; Conditions </a>
+              </li>
+
+              <li>
+                <a href="/privacy"> Privacy Policy </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- FAQ Links -->
+          <nav class="footer-navigation" aria-labelledby="footer-faq-title">
+            <h2 class="footer-navigation__title" id="footer-faq-title">FAQ</h2>
+
+            <ul class="footer-navigation__list">
+              <li>
+                <a href="/account"> Account </a>
+              </li>
+
+              <li>
+                <a href="/deliveries"> Manage Deliveries </a>
+              </li>
+
+              <li>
+                <a href="/orders"> Orders </a>
+              </li>
+
+              <li>
+                <a href="/payments"> Payments </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Resources -->
+          <nav
+            class="footer-navigation"
+            aria-labelledby="footer-resources-title"
+          >
+            <h2 class="footer-navigation__title" id="footer-resources-title">
+              Resources
+            </h2>
+
+            <ul class="footer-navigation__list">
+              <li>
+                <a href="/resources/ebooks"> Free eBooks </a>
+              </li>
+
+              <li>
+                <a href="/resources/development"> Development Tutorial </a>
+              </li>
+
+              <li>
+                <a href="/blog"> How-To Blog </a>
+              </li>
+
+              <li>
+                <a href="/resources/videos"> YouTube Playlist </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Copyright and Payment Methods -->
+        <div class="footer-bottom">
+          <p class="footer-bottom__copyright">
+            SHOP.CO &copy; 2000–2025. All Rights Reserved.
+          </p>
+
+          <ul class="payment-methods" aria-label="Accepted payment methods">
+            <li class="payment-methods__item">
+              <span>Visa</span>
+            </li>
+
+            <li class="payment-methods__item">
+              <span>Mastercard</span>
+            </li>
+
+            <li class="payment-methods__item">
+              <span>PayPal</span>
+            </li>
+
+            <li class="payment-methods__item">
+              <span>Apple Pay</span>
+            </li>
+
+            <li class="payment-methods__item">
+              <span>Google Pay</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
