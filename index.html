@@ -13,6 +13,23 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js" defer></script>
+
+    <!-- GOOGLE FONTS: Montserrat + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -49,7 +66,8 @@
             <li class="primary-navigation--item">
               <a class="primary-navigation--link" href="/shop">
                 Shop
-                <span aria-hidden="true">&#9662;</span>
+
+                <i aria-hidden="true" class="fa-solid fa-angle-down"></i>
               </a>
             </li>
 
@@ -83,7 +101,7 @@
             type="submit"
             aria-label="Submit search"
           >
-            <span aria-hidden="true">&#9906;</span>
+            <i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
           </button>
 
           <input
@@ -102,7 +120,7 @@
             href="/cart"
             aria-label="Shopping cart"
           >
-            <span aria-hidden="true">&#128722;</span>
+            <i aria-hidden="true" class="fa-solid fa-cart-shopping"></i>
           </a>
 
           <a
@@ -110,7 +128,7 @@
             href="/account"
             aria-label="Your account"
           >
-            <span aria-hidden="true">&#9786;</span>
+            <i aria-hidden="true" class="fa-regular fa-circle-user"></i>
           </a>
         </div>
       </div>
@@ -239,7 +257,11 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★★
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
                     </span>
 
                     <span
@@ -280,7 +302,10 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★☆
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
                     </span>
 
                     <span
@@ -325,7 +350,11 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★★
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
                     </span>
 
                     <span
@@ -368,7 +397,11 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★★
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
                     </span>
 
                     <span
@@ -439,7 +472,11 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★★
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </span>
 
                     <span
@@ -486,7 +523,10 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★☆
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </span>
 
                     <span
@@ -529,7 +569,9 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★☆☆
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </span>
 
                     <span
@@ -572,7 +614,11 @@
 
                   <div class="product-rating">
                     <span class="product-rating--stars" aria-hidden="true">
-                      ★★★★★
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
                     </span>
 
                     <span
@@ -701,7 +747,7 @@
                 aria-label="Previous customer reviews"
                 aria-controls="customer-reviews-list"
               >
-                <span aria-hidden="true">&larr;</span>
+                <i class="fa-solid fa-arrow-left-long" aria-hidden="true"></i>
               </button>
 
               <button
@@ -710,7 +756,7 @@
                 aria-label="Next customer reviews"
                 aria-controls="customer-reviews-list"
               >
-                <span aria-hidden="true">&rarr;</span>
+                <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
               </button>
             </div>
           </div>
@@ -723,20 +769,24 @@
             <li class="customer-reviews--item">
               <article class="review-card">
                 <div class="review-card--rating">
-                  <span aria-hidden="true"> ★★★★★ </span>
+                  <span aria-hidden="true">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
 
                   <span class="sr-only"> 5 out of 5 stars </span>
                 </div>
 
                 <h3 class="review-card--author">
                   Sarah M.
-                  <span
-                    class="review-card--verified"
+                  <i
+                    class="fa-solid fa-circle-check review-card--verified"
                     aria-label="Verified customer"
                     title="Verified customer"
-                  >
-                    &#10003;
-                  </span>
+                  ></i>
                 </h3>
 
                 <blockquote class="review-card--quote">
@@ -752,20 +802,24 @@
             <li class="customer-reviews--item">
               <article class="review-card">
                 <div class="review-card--rating">
-                  <span aria-hidden="true"> ★★★★★ </span>
+                  <span aria-hidden="true">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
 
                   <span class="sr-only"> 5 out of 5 stars </span>
                 </div>
 
                 <h3 class="review-card--author">
                   Alex K.
-                  <span
-                    class="review-card--verified"
+                  <i
+                    class="fa-solid fa-circle-check review-card--verified"
                     aria-label="Verified customer"
                     title="Verified customer"
-                  >
-                    &#10003;
-                  </span>
+                  ></i>
                 </h3>
 
                 <blockquote class="review-card--quote">
@@ -782,20 +836,24 @@
             <li class="customer-reviews--item">
               <article class="review-card">
                 <div class="review-card--rating">
-                  <span aria-hidden="true"> ★★★★★ </span>
+                  <span aria-hidden="true">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
 
                   <span class="sr-only"> 5 out of 5 stars </span>
                 </div>
 
                 <h3 class="review-card--author">
                   James L.
-                  <span
-                    class="review-card--verified"
+                  <i
+                    class="fa-solid fa-circle-check review-card--verified"
                     aria-label="Verified customer"
                     title="Verified customer"
-                  >
-                    &#10003;
-                  </span>
+                  ></i>
                 </h3>
 
                 <blockquote class="review-card--quote">
@@ -812,20 +870,24 @@
             <li class="customer-reviews--item">
               <article class="review-card">
                 <div class="review-card--rating">
-                  <span aria-hidden="true"> ★★★★★ </span>
+                  <span aria-hidden="true">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
 
                   <span class="sr-only"> 5 out of 5 stars </span>
                 </div>
 
                 <h3 class="review-card--author">
                   Aisha R.
-                  <span
-                    class="review-card--verified"
+                  <i
+                    class="fa-solid fa-circle-check review-card--verified"
                     aria-label="Verified customer"
                     title="Verified customer"
-                  >
-                    &#10003;
-                  </span>
+                  ></i>
                 </h3>
 
                 <blockquote class="review-card--quote">
@@ -909,7 +971,7 @@
                     href="https://twitter.com/"
                     aria-label="Twitter"
                   >
-                    <span aria-hidden="true">X</span>
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
                   </a>
                 </li>
 
@@ -919,7 +981,7 @@
                     href="https://facebook.com/"
                     aria-label="Facebook"
                   >
-                    <span aria-hidden="true">f</span>
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                   </a>
                 </li>
 
@@ -929,7 +991,7 @@
                     href="https://instagram.com/"
                     aria-label="Instagram"
                   >
-                    <span aria-hidden="true">◎</span>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                   </a>
                 </li>
 
@@ -937,9 +999,9 @@
                   <a
                     class="social-navigation--link"
                     href="https://github.com/"
-                    aria-label="YouTube"
+                    aria-label="GitHub"
                   >
-                    <span aria-hidden="true">▶</span>
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>
@@ -1056,23 +1118,48 @@
 
           <ul class="payment-methods" aria-label="Accepted payment methods">
             <li class="payment-methods--item">
-              <span>Visa</span>
+              <img
+                src="assets/icons/visa.svg"
+                alt="Visa Icon"
+                width="24"
+                height="24"
+              />
             </li>
 
             <li class="payment-methods--item">
-              <span>Mastercard</span>
+              <img
+                src="assets/icons/mastercard.svg"
+                alt="Mastercard Icon"
+                width="24"
+                height="24"
+              />
             </li>
 
             <li class="payment-methods--item">
-              <span>PayPal</span>
+              <img
+                src="assets/icons/paypal.svg"
+                alt="Paypal Icon"
+                width="24"
+                height="24"
+              />
             </li>
 
             <li class="payment-methods--item">
-              <span>Apple Pay</span>
+              <img
+                src="assets/icons/apple-pay.svg"
+                alt="Apple pay Icon"
+                width="24"
+                height="24"
+              />
             </li>
 
             <li class="payment-methods--item">
-              <span>Google Pay</span>
+              <img
+                src="assets/icons/google-pay.svg"
+                alt="Google pay Icon"
+                width="24"
+                height="24"
+              />
             </li>
           </ul>
         </div>
