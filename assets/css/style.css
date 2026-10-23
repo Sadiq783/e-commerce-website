@@ -60,3 +60,21 @@
   --content-width: 69rem;
   --section-space: clamp(3rem, 7vw, 5rem);
 }
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
