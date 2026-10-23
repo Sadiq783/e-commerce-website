@@ -1,0 +1,62 @@
+:root {
+  /* Base palette */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-100: #f0f0f0;
+  --color-gray-200: #f0eeed;
+  --color-gray-400: #999;
+  --color-gray-600: #666;
+  --color-gray-900: #1a1a1a;
+  --color-red-600: #ff3333;
+  --color-red-100: #ffe5e5;
+  --color-gold-500: #ffc633;
+  --color-green-600: #00c12b;
+
+  /* Semantic UI colors */
+  --color-page: var(--color-white);
+  --color-surface: var(--color-gray-100);
+  --color-surface-warm: var(--color-gray-200);
+  --color-text: var(--color-black);
+  --color-text-muted: var(--color-gray-600);
+  --color-text-inverse: var(--color-white);
+  --color-action: var(--color-black);
+  --color-sale: var(--color-red-600);
+  --color-sale-surface: var(--color-red-100);
+  --color-rating: var(--color-gold-500);
+  --color-success: var(--color-green-600);
+  --color-border: #0000001a;
+
+  /* Typography */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: clamp(2rem, 4vw, 3.5rem);
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 900;
+  --leading-tight: 1.05;
+  --leading-normal: 1.5;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Shape and layout */
+  --radius-sm: 0.375rem;
+  --radius-card: 0.875rem;
+  --radius-section: 1.5rem;
+  --radius-pill: 999px;
+  --content-width: 69rem;
+  --section-space: clamp(3rem, 7vw, 5rem);
+}
