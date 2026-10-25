@@ -198,9 +198,8 @@ img {
 }
 
 .header-actions {
-  /* color: inherit; */
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 .header-actions--link {
   color: inherit;
