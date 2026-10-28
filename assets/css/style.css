@@ -438,7 +438,7 @@ del {
   position: relative;
 }
 
-.style-card--formal {
+.style-card--casual {
   grid-column: 1 / 5;
 }
 
@@ -472,6 +472,7 @@ del {
 
 .style-card--image {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   border-radius: var(--radius-card);
 }
