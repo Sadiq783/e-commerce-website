@@ -413,3 +413,65 @@ del {
   padding: 0.6em 3em;
   border-radius: var(--radius-pill);
 }
+
+/* BROWSE BY DRESS STYLE */
+
+.dress-styles {
+  padding: 5rem 0;
+}
+
+.dress-styles--container {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-section);
+  padding: var(--space-12);
+}
+
+.dress-styles--grid {
+  list-style: none;
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 250px);
+}
+
+.dress-styles--item {
+  position: relative;
+}
+
+.style-card--formal {
+  grid-column: 1 / 5;
+}
+
+.style-card--formal {
+  grid-column: 5 / -1;
+}
+
+.style-card--party {
+  grid-column: 1 / 9;
+}
+
+.style-card--gym {
+  grid-column: 9 / -1;
+}
+
+.style-card--title {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.style-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  overflow: hidden;
+}
+
+.style-card--image {
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
